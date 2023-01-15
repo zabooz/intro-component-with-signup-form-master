@@ -153,12 +153,23 @@ small span{
         width: 38rem;
         align-items: flex-end;   
      }
+    form p{
+        padding-right: 2rem;
+    }
     .inputs{
         width:33rem;
         max-width: none;
+        align-self:center ;
     }
     .trial{
         width: 38rem;
+    }
+    button{
+        align-self: center;
+        width: 33rem;
+    }
+    small{
+        align-self: center;
     }
 
 
