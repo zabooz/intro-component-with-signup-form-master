@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    color:white ;
+}
+main{
+    padding: 2.5rem;
+    padding-bottom: 1rem;
+    max-width: 25rem;
+    text-align: center;
+}
+h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+main p{
+    font-weight: 500;
+}
+.user-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    max-width: 25rem;
+}
+.trial{
+    text-align: center;
+    background-color:hsl(248, 32%, 49%);
+    border-radius: .5rem;
+    padding: 1.2rem 4rem;
+    margin-bottom: 1.5rem;
+    filter:drop-shadow(1px 10px 0px rgba(128, 128, 128, 0.482) )
+}
+.trial span{
+    font-weight: 600;
+}
+.trial p{
+    font-weight: 300;
+}
+form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    min-width: 20rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    filter:drop-shadow(1px 10px 0px rgba(128, 128, 128, 0.482) )
+}
+form p{
+    color: hsl(0, 100%, 74%);
+    visibility: hidden;
+    margin: .2rem;
+    font-size: smaller;
+}
+.error{
+    color:hsl(0, 100%, 74%);
+    text-align: end;
+}
+.inputs{
+    max-width: 18rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    border: 1px solid rgba(182, 158, 158, 0.395);
+    padding: 1rem;
+}
+.inputs:focus{
+    outline: none;
+}
+#error0,
+#error1,
+#error2,
+#error3{
+    position: absolute;
+    display: none;
+    right:3rem;
+}
+#error0{
+    top:3rem
+}
+#error1{
+    top:8.3rem
+}
+#error2{
+
+    top:13.6rem
+}
+#error3{
+    top:19rem
+}
+.error-show{
+    display: block !important;
+    visibility: unset;
+}
+button{
+    min-width: 18rem;
+    background-color:hsl(154, 59%, 51%);
+    color: white;
+    padding:1rem;
+    border-radius: .5rem;
+    border: none;
+}
+small{
+    color: rgba(147, 128, 128, 0.395);
+    text-align: center;
+    font-size: .7rem;
+    padding: 1rem;
+}
+small span{
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+    font-size: .8rem;
+}
+@media (min-width:601px){
+    
+    body{
+        flex-direction: row;
+    }
+    main{
+        max-width: 40rem;
+        text-align: start;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    footer{
+        position:absolute;
+        bottom: 0;
+    }
+    .user-input{
+        max-width: 60rem;
+
+    }
+    form{
+        width: 38rem;
+        align-items: flex-end;   
+     }
+    .inputs{
+        width:33rem;
+        max-width: none;
+    }
+    .trial{
+        width: 38rem;
+    }
+
+
+
+}
+
