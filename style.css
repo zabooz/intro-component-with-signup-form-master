@@ -118,6 +118,9 @@ button{
     border-radius: .5rem;
     border: none;
 }
+button:hover{
+    opacity: .7;
+}
 small{
     color: rgba(147, 128, 128, 0.395);
     text-align: center;
